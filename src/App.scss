@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Kalam:400,700');
+@import "./scss/vars";
+
+html,body {
+	color: $color_two;
+	font-size: 16px;
+	line-height: 1.5;
+	background: black url('https://celicreative.com/wp-content/uploads/2015/10/Video-Production-Facebook-Thumbnail.jpg') no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+h1 {
+	color: $color_dark;
+	margin: .3em;
+	text-align: center;
+	font-family: $font_secondary;
+}
+
+p {
+	margin: 0.5em 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	margin: 0 auto;
+	width: 95%;
+	
+	@media screen and (min-width: 760px) {
+		width: 60%;	
+	}
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #eee;
+	margin-bottom: 20px;
+}
+.icon {
+	width: 50px;
+	height: 50px;
+	padding: 0 .5em;
+}
+
+.quote {
+	border:10px solid $color_light;
+	background-color: $color_one;
+	padding: 1em .8em ;
+	text-align: center;
+	font-size: 2em;
+	font-family: $font_primary;
+	border-radius: 100px;
+}
+
+.border {
+	width: 30%;
+	height: 15px;
+	background-color: $color_light;
+	margin: 0 auto;
+}
+
+.opacityOff {
+	opacity: 0;
+	transition: all .2s ease-in;
+}
+
+.opacity {
+	opacity: 1;
+}
+
+.btncontainer {
+	width: 70%;
+	margin: 0 auto;
+}
+.btn {
+	margin: 1em 0 0;
+	font-size: 18px;
+	border-radius: 10px;
+	transition: all 0.2s ease-in;
+	padding: .4em 0;
+	color: $color_light;
+	background-color: $color_two;
+	border: 3px solid $color_two;
+	font-weight: 700;
+	font-family: $font_primary;
+	width: 200px;
+	cursor:pointer;
+	outline: none;
+	
+	&:hover {
+		background-color: $primary;
+		border: 3px solid $color_two;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+.twitter-btn {
+	background-color: #1da1f3;
+	color: $color_light;
+	border: none;
+	width: 200px;
+	border-radius: 10px;
+	font-size: 14px;
+	padding: .8em;
+	margin: 1em 0;
+	outline: none;
+	cursor: pointer;
+}
+
+footer {
+	text-align: center;
+	padding: 3em 0;
+}
